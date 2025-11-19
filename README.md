@@ -1,6 +1,8 @@
 # Context-Aware Chatbot with RAG
 A lightweight and extensible Retrieval-Augmented Generation (RAG) based context-aware chatbot powered by OpenAI.
 The chatbot retrieves relevant information from a vector database and supplies it as context to the LLM, allowing it to generate more accurate and grounded responses based on the user's knowledge base.
+
+![alt text](https://raw.githubusercontent.com/rukon-uddin/Context-Aware-Chat-bot/refs/heads/main/assets/systemDesign.png)
 ## ✨ Features
 
 1. RAG-powered responses
