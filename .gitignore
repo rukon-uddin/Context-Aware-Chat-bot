@@ -1,0 +1,6 @@
+.vscode
+_*
+*gguf
+*~
+env
+bge-base-en-v1.5-gguf/
