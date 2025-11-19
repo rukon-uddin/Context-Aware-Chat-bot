@@ -47,9 +47,11 @@ export OPENAI_API_KEY="YOUR_OPENAI_API_KEY"
 
 ### 4️⃣ Run the Application
 ```
-python main.py
+Run index.html on your browser
 ```
-
+```
+uvicorn fastapi_app:app --reload --host 0.0.0.0 --port 8080
+```
 
 ## 🐳 Run with Docker
 
@@ -62,15 +64,13 @@ cd Context-Aware-Chat-bot
 ```
 docker build -t raychatbot .
 ```
-### 3️⃣ Run the Container
+### 3️⃣ Set API Key (Local Machine)
 ```
-docker run -it raychatbot /bin/bash
+export OPENAI_API_KEY="chatgpt api key"
 ```
-### 4️⃣ Set API Key and Start
-#### Inside the container:
+### 4️⃣ Run the Container
 ```
-export OPENAI_API_KEY="chatgpt api keyY"
-python main.py
+docker run -d -e OPENAI_API_KEY=$OPENAI_API_KEY -p 8080:8081 raychatbot:latest
 ```
 
 ### 🧠 How It Works

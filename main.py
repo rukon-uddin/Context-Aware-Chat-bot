@@ -1,8 +1,3 @@
-"""
-Download the embedding model first, using the below command
-git clone https://huggingface.co/CompendiumLabs/bge-base-en-v1.5-gguf
-"""
-
 from llm_system import ChatGPTClient
 from rag_system import SimpleRag
 

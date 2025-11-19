@@ -4,7 +4,7 @@ from llama_cpp import Llama
 
 class SimpleRag:
     def __init__(self):
-        self.embedding_model_url = './bge-base-en-v1.5-gguf/bge-base-en-v1.5-f16.gguf'
+        self.embedding_model_url = './embed_model/bge-base-en-v1.5-f16.gguf'
         self.dataset = []
         self.VECTOR_DB = []
         self.model = Llama(self.embedding_model_url, embedding=True)
